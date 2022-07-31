@@ -1,3 +1,4 @@
+from distutils.command.upload import upload
 import socket
 
 HOST = '127.0.0.1'
@@ -14,3 +15,15 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
+
+
+def UPLOAD():
+    pass
+
+
+def RETRIEVE():
+    pass
+
+
+def DOWNLOAD():
+    pass
